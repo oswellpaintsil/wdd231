@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="512" height="512">
+  <g>
+    <!-- Main House Body (Modify fill to your primary color) -->
+    <path d="M460.5,225.5L256,38.5L51.5,225.5V440.5H186.5V305.5H325.5V440.5H460.5V225.5Z" fill="#2c3e50" />
+    <!-- Door (Modify fill to your secondary color) -->
+    <path d="M211.5,440.5H300.5V330.5H211.5V440.5Z" fill="#e67e22" />
+  </g>
+</svg>
+

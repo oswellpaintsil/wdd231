@@ -1,0 +1,28 @@
+@media (min-width: 38rem) {
+  .hamburger {
+    display: none;
+  }
+
+  /* Force navigation to show on desktop */
+  .navigation {
+    display: block;
+    border-bottom: 1px solid #eee;
+  }
+
+  .navigation ul {
+    display: flex; /* Horizontal menu */
+    max-width: 900px;
+    margin: 0 auto;
+  }
+
+  .navigation a {
+    border-bottom: none; /* Remove vertical list borders */
+    padding: 1rem 20px;
+  }
+
+  header {
+    grid-template-columns: 24px auto;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+}
