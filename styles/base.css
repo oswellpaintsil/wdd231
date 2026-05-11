@@ -1,3 +1,8 @@
+/* Apply Google Font */
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 /* Header Grid */
 header {
   display: grid;
@@ -15,14 +20,9 @@ header img {
   padding-bottom: 5px;
 }
 
-/* Navigation Base Styles */
-.navigation {
-  display: none; /* Hidden by default on small screens */
-}
-
-.navigation.show {
-  display: block; /* Shown when hamburger is clicked */
-}
+/* Navigation */
+.navigation { display: none; }
+.navigation.show { display: block; }
 
 .navigation ul {
   list-style-type: none;
@@ -32,54 +32,33 @@ header img {
 
 .navigation a {
   display: block;
-  padding: 0.8rem 10px; /* Ensures ~44px height for touch */
+  padding: 0.8rem 10px;
   color: #2c3e50;
   text-decoration: none;
   border-bottom: 1px solid #eee;
 }
 
-/* Wayfinding: Current Page */
+/* FIX: Color Contrast for li.current */
 .navigation li.current {
-  background-color: rgba(0,0,0,0.05);
+  background-color: #ddd; /* Darker background for better contrast */
+}
+.navigation li.current a {
+  color: #000; /* Ensuring deep black text on the gray background */
+  font-weight: bold;
 }
 
-/* Hover Effect */
-.navigation a:hover {
-  background-color: #e67e22; /* Matches logo door color */
-  color: white;
-}
-
-/* Hamburger Icon button */
-.hamburger {
-  background: none;
-  border: none;
-  cursor: pointer;
-  font-family: Verdana, sans-serif;
-  font-size: 2rem;
-  color: #2c3e50;
-}
-
-.hamburger::before { content: "\2630"; }
-.hamburger.show::before { content: "\00D7"; }
-
-/* Basic Content alignment */
-h1 {
-  margin-left: 10px;
-}
-
-/* Footer Styles */
+/* Footer Styling */
 footer {
   padding: 1rem 10px;
   background-color: #f9f9f9;
   text-align: center;
-  border-top: 1px solid #ddd;
 }
 
 .social {
   display: flex;
   justify-content: center;
   column-gap: 15px;
-  margin-bottom: 1rem;
+  margin-bottom: 10px;
 }
 
 .social a {
@@ -90,20 +69,22 @@ footer {
   height: 44px;
   border: 1px solid #ccc;
   border-radius: 4px;
-  transition: 0.3s;
 }
 
-.social a:hover {
-  background-color: #eee;
+/* Section styling for Main */
+section {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #eee;
 }
 
-.social img {
-  width: 24px;
-  height: 24px;
+.hamburger {
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: Verdana, sans-serif;
+  font-size: 2rem;
+  color: #2c3e50;
 }
-
-footer p {
-  margin: 5px 0;
-  font-size: 0.9rem;
-  color: #555;
-}
+.hamburger::before { content: "\2630"; }
+.hamburger.show::before { content: "\00D7"; }

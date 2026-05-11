@@ -1,9 +1,23 @@
 <!doctype html>
-<html lang="en">
+<html lang="en-US">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>W01 Activity: Site Navigation</title>
+    <title>W01 Activity: Home Page - Oswell Paintsil</title>
+    <meta
+      name="description"
+      content="WDD 231 Learning Activity: Site Header, Navigation, and Footer implementation for Oswell Paintsil."
+    />
+    <meta name="author" content="Oswell Paintsil" />
+
+    <!-- Google Fonts Preconnect and Stylesheet -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
     <link rel="stylesheet" href="styles/base.css" />
     <link rel="stylesheet" href="styles/larger.css" />
   </head>
@@ -20,30 +34,47 @@
 
     <nav id="nav-bar" class="navigation">
       <ul>
+        <li><a href="#">Home</a></li>
         <li><a href="#">News & Events</a></li>
         <li class="current"><a href="#">Dedicated Temples</a></li>
         <li><a href="#">Announced Temples</a></li>
+        <li><a href="#">Contact Us</a></li>
       </ul>
     </nav>
 
     <main>
       <h1>Dedicated Temples</h1>
+
+      <section>
+        <h2>Temple Locations</h2>
+        <p>Information about various temple locations around the world.</p>
+      </section>
+
+      <section>
+        <h2>Construction Updates</h2>
+        <p>Latest news regarding temples currently under construction.</p>
+      </section>
+
+      <section>
+        <h2>Historical Significance</h2>
+        <p>The history and cultural impact of these dedicated sites.</p>
+      </section>
     </main>
+
     <footer>
       <div class="social">
         <a href="https://linkedin.com" target="_blank">
-          <img src="images/linkedin.svg" alt="LinkedIn" />
+          <img src="images/linkedin.svg" alt="Visit my LinkedIn profile" />
         </a>
         <a href="https://github.com" target="_blank">
-          <img src="images/github.svg" alt="GitHub" />
+          <img src="images/github.svg" alt="Visit my GitHub profile" />
         </a>
-        <!-- Add 1-2 more social links as per instructions -->
       </div>
-
       <p>&copy;<span id="year"></span> | Oswell Paintsil | Accra</p>
       <p id="lastModified"></p>
     </footer>
 
-    <script src="scripts/navigation.js"></script>
+    <!-- Moved to bottom of body with defer -->
+    <script src="scripts/navigation.js" defer></script>
   </body>
 </html>
