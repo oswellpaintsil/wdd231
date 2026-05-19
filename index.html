@@ -3,78 +3,118 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>W01 Activity: Home Page - Oswell Paintsil</title>
+
+    <title>WDD 231 Home - Oswell Paintsil</title>
+
     <meta
       name="description"
-      content="WDD 231 Learning Activity: Site Header, Navigation, and Footer implementation for Oswell Paintsil."
+      content="WDD 231 home page assignment for Oswell Paintsil."
     />
+
     <meta name="author" content="Oswell Paintsil" />
 
-    <!-- Google Fonts Preconnect and Stylesheet -->
+    <!-- Google Font -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap"
       rel="stylesheet"
     />
 
-    <link rel="stylesheet" href="styles/base.css" />
+    <!-- CSS -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
     <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- JavaScript -->
+    <script src="scripts/navigation.js" defer></script>
+    <script src="scripts/date.js" defer></script>
+    <script src="scripts/courses.js" defer></script>
   </head>
+
   <body>
     <header>
-      <img src="images/logo.svg" alt="site logo" width="1" height="1" />
-      <span>Oswell Paintsil</span>
-      <button
-        id="nav-button"
-        class="hamburger"
-        aria-label="navigation"
-      ></button>
+      <div class="logo">
+        <img src="images/logo.svg" alt="Site Logo" />
+        <span>Nero's Home Page</span>
+      </div>
+
+      <button id="menuButton" class="hamburger"></button>
     </header>
 
-    <nav id="nav-bar" class="navigation">
+    <nav id="navMenu" class="navigation">
       <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">News & Events</a></li>
-        <li class="current"><a href="#">Dedicated Temples</a></li>
-        <li><a href="#">Announced Temples</a></li>
-        <li><a href="#">Contact Us</a></li>
+        <li class="active"><a href="#">Home</a></li>
+        <li><a href="#">Chamber Project</a></li>
+        <li><a href="#">Final Project</a></li>
       </ul>
     </nav>
 
     <main>
-      <h1>Dedicated Temples</h1>
+      <h1>Home</h1>
 
-      <section>
-        <h2>Temple Locations</h2>
-        <p>Information about various temple locations around the world.</p>
-      </section>
+      <div class="top-sections">
+        <section class="card">
+          <h2>About Me</h2>
 
-      <section>
-        <h2>Construction Updates</h2>
-        <p>Latest news regarding temples currently under construction.</p>
-      </section>
+          <p>
+            I am a BYU Pathway student pursuing Professional Studies, driven by
+            a passion for building efficient, impactful digital solutions.
+            Having already earned a certificate in Project Management, I am
+            currently expanding my toolkit into Web Development. My ultimate
+            career goal is to bring my unique blend of organization and
+            technical skills to the teams at Google.
+          </p>
+        </section>
 
-      <section>
-        <h2>Historical Significance</h2>
-        <p>The history and cultural impact of these dedicated sites.</p>
+        <section class="card photo-card">
+          <h2>Student Photo</h2>
+
+          <img src="images/oswell.jpeg" alt="student photo" />
+        </section>
+      </div>
+
+      <section class="courses">
+        <h2>Web Certificate Courses</h2>
+
+        <div class="buttons">
+          <button id="all">All</button>
+          <button id="cse">CSE</button>
+          <button id="wdd">WDD</button>
+        </div>
+
+        <div id="courseContainer"></div>
+
+        <p class="credits">
+          The total credits for course listed above is
+          <span id="totalCredits"></span>
+        </p>
       </section>
     </main>
 
     <footer>
       <div class="social">
         <a href="https://linkedin.com" target="_blank">
-          <img src="images/linkedin.svg" alt="Visit my LinkedIn profile" />
+          <img src="images/linkedin.svg" alt="LinkedIn" />
         </a>
+
         <a href="https://github.com" target="_blank">
-          <img src="images/github.svg" alt="Visit my GitHub profile" />
+          <img src="images/github.svg" alt="GitHub" />
+        </a>
+
+        <a href="https://x.com" target="_blank">
+          <img src="images/x-logo.svg" alt="X" />
         </a>
       </div>
-      <p>&copy;<span id="year"></span> | Oswell Paintsil | Accra</p>
+
+      <p>
+        &copy;
+        <span id="currentyear"></span>
+        • Oswell Paintsil • Accra, Ghana
+      </p>
+
       <p id="lastModified"></p>
     </footer>
-
-    <!-- Moved to bottom of body with defer -->
-    <script src="scripts/navigation.js" defer></script>
   </body>
 </html>

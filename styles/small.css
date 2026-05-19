@@ -1,0 +1,187 @@
+:root {
+  --primary: #1f1f1f;
+  --secondary: #d9d9d9;
+  --completed: #444;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+  background-color: #f2f2f2;
+}
+
+/* HEADER */
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.logo img {
+  width: 50px;
+}
+
+.logo span {
+  font-size: 2rem;
+}
+
+/* HAMBURGER */
+
+.hamburger {
+  background: none;
+  border: none;
+  font-size: 2.5rem;
+  cursor: pointer;
+}
+
+.hamburger::before {
+  content: "☰";
+}
+
+.hamburger.show::before {
+  content: "✖";
+}
+
+/* NAVIGATION */
+
+.navigation {
+  display: none;
+}
+
+.navigation.show {
+  display: block;
+}
+
+.navigation ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navigation a {
+  display: block;
+  padding: 1rem;
+  text-decoration: none;
+  background-color: var(--primary);
+  color: white;
+  border-top: 1px solid #444;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  background-color: #444;
+}
+
+.active a {
+  background-color: #555;
+}
+
+/* MAIN */
+
+main {
+  padding: 1rem;
+}
+
+h1 {
+  margin-top: 0;
+}
+
+.card,
+.courses {
+  background-color: #e2e2e2;
+  margin-bottom: 1.5rem;
+}
+
+.card h2,
+.courses h2 {
+  background-color: var(--primary);
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: .7rem;
+  font-size: 1.2rem;
+}
+
+.card p {
+  padding: 1rem;
+  line-height: 1.5;
+}
+
+.photo-card img {
+  display: block;
+  width: 80%;
+  max-width: 250px;
+  margin: 1rem auto;
+  border-radius: 6px;
+}
+
+/* BUTTONS */
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: .5rem;
+  padding: 1rem;
+}
+
+.buttons button {
+  flex: 1;
+  padding: .7rem;
+  border-radius: 8px;
+  border: 1px solid #444;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* COURSES */
+
+#courseContainer {
+  padding: 0 1rem 1rem;
+}
+
+.course-card {
+  background-color: #cfcfcf;
+  margin-bottom: .5rem;
+  padding: .8rem;
+  text-align: center;
+  border: 1px solid #999;
+}
+
+.completed {
+  background-color: var(--completed);
+  color: white;
+}
+
+.credits {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+/* FOOTER */
+
+footer {
+  text-align: center;
+  padding: 1rem;
+}
+
+.social {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.social img {
+  width: 50px;
+}

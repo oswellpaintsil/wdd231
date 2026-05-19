@@ -1,15 +1,7 @@
-// Navigation Toggle
-const navButton = document.querySelector('#nav-button');
-const navLinks = document.querySelector('#nav-bar');
+const menuButton = document.querySelector('#menuButton');
+const navMenu = document.querySelector('#navMenu');
 
-navButton.addEventListener('click', () => {
-    navButton.classList.toggle('show');
-    navLinks.classList.toggle('show');
+menuButton.addEventListener('click', () => {
+  menuButton.classList.toggle('show');
+  navMenu.classList.toggle('show');
 });
-
-// Footer Dates
-const currentYear = new Date().getFullYear();
-document.querySelector('#year').textContent = currentYear;
-
-const lastMod = document.lastModified;
-document.querySelector('#lastModified').textContent = `Last Modified: ${lastMod}`;
