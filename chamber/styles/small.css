@@ -399,7 +399,7 @@ footer {
     height: 50vh;          /* reduced for mobile stability */
     min-height: 280px;
 
-    background-image: url("../images/hero-image.jpg");
+    background-image: url("images/hero-image.jpg");
     background-size: cover;
     background-position: center top; /* KEY FIX */
     background-repeat: no-repeat;
