@@ -1,0 +1,92 @@
+{
+  "members": [
+    {
+      "name": "Accra Textile Hub",
+      "tagline": "Authentic Ghanaian Fabrics & Design",
+      "address": "14 Independence Ave, Accra, Ghana",
+      "phone": "+233 30 222 1001",
+      "website": "https://accratextilehub.com",
+      "image": "textile.webp",
+      "membershipLevel": 3,
+      "email": "info@accratextilehub.com",
+      "description": "Ghana's premier destination for kente, batik, and wax-print textiles."
+    },
+    {
+      "name": "Gold Coast Logistics",
+      "tagline": "Reliable Shipping & Freight Solutions",
+      "address": "7 Harbour Rd, Tema, Accra, Ghana",
+      "phone": "+233 30 222 2002",
+      "website": "https://goldcoastlogistics.com.gh",
+      "image": "logistics.webp",
+      "membershipLevel": 3,
+      "email": "contact@goldcoastlogistics.com.gh",
+      "description": "End-to-end logistics serving West Africa's fastest growing port."
+    },
+    {
+      "name": "Osu Digital Agency",
+      "tagline": "Web, Branding & Creative Tech",
+      "address": "22 Oxford St, Osu, Accra, Ghana",
+      "phone": "+233 30 222 3003",
+      "website": "https://osudigital.com",
+      "image": "digital.webp",
+      "membershipLevel": 2,
+      "email": "hello@osudigital.com",
+      "description": "Award-winning digital studio building brands for African businesses."
+    },
+    {
+      "name": "Labadi Beach Hotel",
+      "tagline": "Luxury Hospitality on the Atlantic",
+      "address": "1 La-Labadi Rd, Accra, Ghana",
+      "phone": "+233 30 222 4004",
+      "website": "https://labadibeachhotel.com",
+      "image": "hotel.webp",
+      "membershipLevel": 3,
+      "email": "reservations@labadibeachhotel.com",
+      "description": "Five-star beachfront resort with world-class conference facilities."
+    },
+    {
+      "name": "Kantanka Automotive",
+      "tagline": "Made in Ghana, Built to Last",
+      "address": "48 Industrial Area, Accra, Ghana",
+      "phone": "+233 30 222 5005",
+      "website": "https://kantankaautomotive.com",
+      "image": "automotive.webp",
+      "membershipLevel": 2,
+      "email": "info@kantankaautomotive.com",
+      "description": "Ghana's homegrown vehicle manufacturer and service center."
+    },
+    {
+      "name": "Accra Farmers Market Co-op",
+      "tagline": "Fresh. Local. Sustainable.",
+      "address": "Ring Road Central, Accra, Ghana",
+      "phone": "+233 30 222 6006",
+      "website": "https://accrafarmersmarket.org",
+      "image": "farmers.webp",
+      "membershipLevel": 1,
+      "email": "coop@accrafarmersmarket.org",
+      "description": "Community co-operative connecting local farmers with urban consumers."
+    },
+    {
+      "name": "Kpone Solar Energy",
+      "tagline": "Powering Ghana's Future",
+      "address": "12 Energy Blvd, Kpone, Accra, Ghana",
+      "phone": "+233 30 222 7007",
+      "website": "https://kponesolar.com",
+      "image": "solar.webp",
+      "membershipLevel": 2,
+      "email": "projects@kponesolar.com",
+      "description": "Leading solar installation and clean energy solutions for homes and businesses."
+    },
+    {
+      "name": "UniBank Ghana",
+      "tagline": "Banking for Every Ghanaian",
+      "address": "Kwame Nkrumah Ave, Accra, Ghana",
+      "phone": "+233 30 222 8008",
+      "website": "https://unibankafrica.com",
+      "image": "bank.webp",
+      "membershipLevel": 3,
+      "email": "support@unibankafrica.com",
+      "description": "Full-service retail and commercial banking with mobile-first solutions."
+    }
+  ]
+}

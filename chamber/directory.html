@@ -1,0 +1,230 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Browse the Accra Chamber of Commerce business directory. Find local businesses, contacts, and membership details for companies in Accra, Ghana."
+    />
+    <meta name="author" content="Oswell Paintsil" />
+    <title>Business Directory | Accra Chamber of Commerce</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="images/favicon.svg" />
+
+    <!-- Facebook Open Graph -->
+    <meta
+      property="og:title"
+      content="Business Directory | Accra Chamber of Commerce"
+    />
+    <meta
+      property="og:description"
+      content="Browse the Accra Chamber of Commerce member directory — local businesses, contacts, and memberships."
+    />
+    <meta
+      property="og:image"
+      content="https://yourdomain.com/chamber/images/og-image.jpg"
+    />
+    <meta
+      property="og:url"
+      content="https://yourdomain.com/chamber/directory.html"
+    />
+    <meta property="og:type" content="website" />
+
+    <!-- CSS: normalize/reset is inside small.css; small first, then larger -->
+    <link rel="stylesheet" href="styles/normalize.css" />
+    <link rel="stylesheet" href="styles/small.css" />
+    <link rel="stylesheet" href="styles/larger.css" />
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Source+Sans+3:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- ===================== HEADER ===================== -->
+    <header>
+      <a
+        href="index.html"
+        class="header-logo"
+        aria-label="Accra Chamber of Commerce — Home"
+      >
+        <svg
+          class="logo-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 44 44"
+          aria-hidden="true"
+        >
+          <rect width="44" height="44" rx="22" fill="#1a3c2a" />
+          <text
+            x="22"
+            y="30"
+            text-anchor="middle"
+            font-size="22"
+            fill="#c8963e"
+            font-family="Georgia,serif"
+            font-weight="bold"
+          >
+            A
+          </text>
+        </svg>
+        <div class="logo-text">
+          <span class="site-name">Accra Chamber</span>
+          <span class="site-sub">of Commerce</span>
+        </div>
+      </a>
+
+      <div class="header-controls">
+        <button class="theme-toggle" aria-label="Toggle dark mode">
+          &#9680;
+        </button>
+        <button
+          class="hamburger"
+          aria-label="Open navigation"
+          aria-expanded="false"
+          aria-controls="main-nav"
+        >
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </header>
+
+    <!-- ===================== NAVIGATION ===================== -->
+    <nav id="main-nav" aria-label="Main navigation">
+      <ul role="list">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="directory.html">Directory</a></li>
+        <li><a href="join.html">Join</a></li>
+        <li><a href="discover.html">Discover</a></li>
+      </ul>
+    </nav>
+
+    <!-- ===================== HERO SECTION ===================== -->
+    <section class="hero">
+      <img
+        class="hero-img"
+        src="images/hero-image.jpg"
+        alt="Accra city business skyline"
+      />
+
+      <div class="hero-overlay">
+        <h1>Accra Chamber of Commerce</h1>
+        <p>Connecting Businesses. Building Opportunities. Growing Accra.</p>
+      </div>
+    </section>
+
+    <!-- ===================== PAGE BANNER ===================== -->
+    <section class="page-banner">
+      <h1>Member Directory</h1>
+      <p>
+        Connecting Accra&rsquo;s business community &mdash; stronger together
+      </p>
+    </section>
+
+    <!-- ===================== DIRECTORY CONTROLS ===================== -->
+    <div class="directory-controls" role="toolbar" aria-label="View controls">
+      <h2>Accra Chamber Members</h2>
+      <div class="view-toggle" role="group" aria-label="Toggle view">
+        <button
+          id="btn-grid"
+          class="view-btn active"
+          aria-pressed="true"
+          title="Grid view"
+          aria-label="Grid view"
+        >
+          &#8862;
+        </button>
+        <button
+          id="btn-list"
+          class="view-btn"
+          aria-pressed="false"
+          title="List view"
+          aria-label="List view"
+        >
+          &#9776;
+        </button>
+      </div>
+    </div>
+
+    <!-- ===================== MAIN / DIRECTORY ===================== -->
+    <main>
+      <div
+        id="members-container"
+        class="grid-view"
+        role="list"
+        aria-label="Chamber member businesses"
+        aria-live="polite"
+      >
+        <!-- Populated by JavaScript -->
+      </div>
+    </main>
+
+    <!-- ===================== FOOTER  — matches wireframe layout ===================== -->
+    <footer>
+      <div class="footer-inner">
+        <!-- Left: org contact info -->
+        <address class="footer-org">
+          <strong>Accra Chamber of Commerce</strong>
+          10 Independence Avenue<br />
+          Accra, Greater Accra, Ghana<br />
+          <a href="mailto:info@accrachamber.org">info@accrachamber.org</a><br />
+          +233 555007535
+        </address>
+
+        <!-- Centre: social icons (YouTube, Twitter/X, LinkedIn) -->
+        <div class="footer-social" aria-label="Social media">
+          <a
+            href="https://youtube.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="YouTube"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.6 12 3.6 12 3.6s-7.5 0-9.4.5A3 3 0 0 0 .5 6.2C0 8.1 0 12 0 12s0 3.9.5 5.8a3 3 0 0 0 2.1 2.1C4.5 20.4 12 20.4 12 20.4s7.5 0 9.4-.5a3 3 0 0 0 2.1-2.1C24 15.9 24 12 24 12s0-3.9-.5-5.8zM9.6 15.6V8.4l6.3 3.6-6.3 3.6z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://twitter.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Twitter / X"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M18.9 1h3.7l-8 9.2L24 23h-7.4l-5.8-7.6L4.2 23H.5l8.6-9.8L0 1h7.6l5.2 6.9L18.9 1zm-1.3 19.8h2L6.5 3.1H4.3l13.3 17.7z"
+              />
+            </svg>
+          </a>
+          <a
+            href="https://linkedin.com"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="LinkedIn"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path
+                d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05a3.74 3.74 0 0 1 3.37-1.85c3.6 0 4.27 2.37 4.27 5.45v6.29zM5.34 7.43a2.07 2.07 0 1 1 0-4.13 2.07 2.07 0 0 1 0 4.13zM3.56 20.45h3.56V9H3.56v11.45zM22.22 0H1.78C.8 0 0 .78 0 1.74v20.52C0 23.22.8 24 1.78 24h20.44C23.2 24 24 23.22 24 22.26V1.74C24 .78 23.2 0 22.22 0z"
+              />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Right: development info -->
+        <div class="footer-dev">
+          <strong>WDD231 Class Project</strong><br />
+          Oswell Paintsil<br />
+          &copy; <span id="copyright-year"></span> Accra Chamber of Commerce<br />
+          Last Modification: <span id="last-modified"></span>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+  </body>
+</html>

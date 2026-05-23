@@ -1,0 +1,196 @@
+/* ============================================
+   TABLET VIEW
+============================================ */
+@media screen and (min-width: 640px) {
+
+    /* ========================================
+       HEADER
+    ======================================== */
+    header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem 2rem;
+    }
+
+    .header-logo {
+        width: auto;
+    }
+
+    /* ========================================
+       NAVIGATION
+    ======================================== */
+    .hamburger {
+        display: none;
+    }
+
+    nav {
+        display: block !important;
+        background-color: transparent;
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: .5rem;
+        padding-right: 2rem;
+    }
+
+    nav ul li a {
+        color: #000;
+        border: none;
+        padding: .5rem .8rem;
+    }
+
+    nav ul li a:hover,
+    nav ul li a.active {
+        background-color: #ddd;
+        color: #000;
+    }
+
+    /* ========================================
+       MAIN
+    ======================================== */
+    main {
+        padding: 2rem;
+    }
+
+    /* ========================================
+       DIRECTORY GRID
+    ======================================== */
+    #members-container.grid-view {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    /* ========================================
+       FOOTER
+    ======================================== */
+    .footer-inner {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+    }
+
+    .footer-org,
+    .footer-dev {
+        flex: 1;
+    }
+
+    .footer-dev {
+        text-align: right;
+    }
+
+    .footer-social {
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+/* ============================================
+   DESKTOP VIEW
+============================================ */
+@media screen and (min-width: 900px) {
+
+    /* ========================================
+       HEADER
+    ======================================== */
+    header {
+        padding: 1rem 3rem;
+    }
+
+    nav ul {
+        padding-right: 3rem;
+    }
+
+    /* ========================================
+       PAGE BANNER
+    ======================================== */
+    .page-banner {
+        padding: 2rem;
+    }
+
+    .page-banner h1 {
+        font-size: 2.5rem;
+    }
+
+    /* ========================================
+       MAIN
+    ======================================== */
+    main {
+        padding: 2rem 3rem;
+    }
+
+    /* ========================================
+       DIRECTORY GRID
+    ======================================== */
+    #members-container.grid-view {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    /* ========================================
+       CARD ADJUSTMENTS
+    ======================================== */
+    .card-img-wrap {
+        width: 90px;
+        height: 90px;
+    }
+
+    .card-name {
+        font-size: 1.3rem;
+    }
+}
+
+/* ============================================
+   LARGE SCREENS
+============================================ */
+@media screen and (min-width: 1200px) {
+
+    #members-container.grid-view {
+        grid-template-columns: repeat(4, 1fr);
+    }
+
+    main {
+        max-width: 1400px;
+        margin: 0 auto;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .hero {
+        height: 65vh;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .hero {
+        height: 65vh;
+        background-position: center;
+    }
+
+    .hero-overlay h1 {
+        font-size: 2.4rem;
+    }
+
+    .hero-overlay p {
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .hero {
+        height: 75vh;
+    }
+
+    .hero-overlay h1 {
+        font-size: 3rem;
+    }
+}
