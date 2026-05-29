@@ -200,4 +200,87 @@ document.addEventListener("DOMContentLoaded", () => {
   }
 
   loadMembers();
+  
 });
+
+
+
+
+
+
+
+
+
+
+
+
+const tempEl = document.getElementById("current-temp");
+const descEl = document.getElementById("weather-desc");
+const forecastEl = document.getElementById("forecast-list");
+
+if (tempEl && descEl && forecastEl) {
+
+  function loadWeather() {
+
+    // 🔥 TEMP FAKE DATA (guaranteed to work)
+    const currentTemp = 28;
+    const description = "Partly cloudy";
+
+    const forecast = [
+      { day: "Today", temp: 28 },
+      { day: "Tomorrow", temp: 30 },
+      { day: "Day 3", temp: 29 }
+    ];
+
+    // CURRENT WEATHER
+    tempEl.textContent = currentTemp;
+    descEl.textContent = description;
+
+    // FORECAST
+    forecastEl.innerHTML = "";
+
+    forecast.forEach(item => {
+      const li = document.createElement("li");
+      li.textContent = `${item.day}: ${item.temp}°C`;
+      forecastEl.appendChild(li);
+    });
+  }
+
+  loadWeather();
+}
+
+const spotlightEl = document.getElementById("spotlight-container");
+
+if (spotlightEl) {
+
+  async function loadSpotlights() {
+    const res = await fetch("data/members.json");
+    const data = await res.json();
+
+    const premium = data.members.filter(m => m.membershipLevel >= 2);
+
+    const selected = [...premium]
+      .sort(() => Math.random() - 0.5)
+      .slice(0, 3);
+
+    spotlightEl.innerHTML = "";
+
+    selected.forEach(m => {
+      const div = document.createElement("div");
+
+      div.classList.add("spotlight-card");
+
+      div.innerHTML = `
+        <h3>${m.name}</h3>
+        <p>${m.tagline}</p>
+        <p>${m.phone}</p>
+        <p>${m.address}</p>
+        <a href="${m.website}" target="_blank">Visit Site</a>
+      `;
+
+      spotlightEl.appendChild(div);
+    });
+  }
+
+  loadSpotlights();
+}
