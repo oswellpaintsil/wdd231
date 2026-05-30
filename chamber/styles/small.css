@@ -400,7 +400,7 @@ footer {
     min-height: 280px;
     background-color: #1a3c2a;
 
-    background-image: url("https://oswellpaintsil.github.io/wdd231/chamber/images/hero-image.jpg");
+    background-image: url("/chamber/images/hero-image.jpg");
     background-size: cover;
     background-position: center top; /* KEY FIX */
     background-repeat: no-repeat;
