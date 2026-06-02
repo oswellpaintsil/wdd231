@@ -284,3 +284,76 @@ if (spotlightEl) {
 
   loadSpotlights();
 }
+
+
+
+
+// ============================================================
+// JOIN PAGE FUNCTIONALITY
+// ============================================================
+
+// 1. Fill hidden timestamp field when page loads
+const timestampInput = document.querySelector("#timestamp");
+
+if (timestampInput) {
+  timestampInput.value = new Date().toISOString();
+}
+
+// ============================================================
+// 2. OPEN MODALS (Learn More links)
+// ============================================================
+
+const modalLinks = document.querySelectorAll("[data-dialog]");
+
+modalLinks.forEach(link => {
+  link.addEventListener("click", (e) => {
+    e.preventDefault();
+
+    const dialogId = link.dataset.dialog;
+    const dialog = document.getElementById(dialogId);
+
+    if (dialog) {
+      dialog.showModal();
+    }
+  });
+});
+// ============================================================
+// 3. CLOSE MODALS
+// ============================================================
+
+const closeButtons = document.querySelectorAll(".close-dialog");
+
+closeButtons.forEach(btn => {
+  btn.addEventListener("click", () => {
+    const dialog = btn.closest("dialog");
+    dialog.close();
+  });
+});
+
+
+// ============================================================
+// THANK YOU PAGE DATA DISPLAY
+// ============================================================
+
+const resultsContainer = document.querySelector("#results");
+
+if (resultsContainer) {
+
+  const params = new URLSearchParams(window.location.search);
+
+  const firstname = params.get("firstname");
+  const lastname = params.get("lastname");
+  const email = params.get("email");
+  const phone = params.get("phone");
+  const business = params.get("business");
+  const timestamp = params.get("timestamp");
+
+  resultsContainer.innerHTML = `
+    <p><strong>First Name:</strong> ${firstname}</p>
+    <p><strong>Last Name:</strong> ${lastname}</p>
+    <p><strong>Email:</strong> ${email}</p>
+    <p><strong>Phone:</strong> ${phone}</p>
+    <p><strong>Business:</strong> ${business}</p>
+    <p><strong>Submitted:</strong> ${timestamp}</p>
+  `;
+}

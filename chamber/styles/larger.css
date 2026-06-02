@@ -194,3 +194,21 @@
         font-size: 3rem;
     }
 }
+
+
+
+
+
+
+/* ============================================
+   JOIN PAGE LARGE SCREENS
+============================================ */
+
+@media screen and (min-width: 900px) {
+
+    .join-container {
+        grid-template-columns: 2fr 1fr;
+        align-items: start;
+    }
+
+}
