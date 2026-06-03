@@ -293,15 +293,15 @@ main {
 }
 
 .badge-gold {
-    background-color: goldenrod;
+    background-color: #daa520;
 }
 
 .badge-silver {
-    background-color: gray;
+    background-color: #808080;
 }
 
 .badge-member {
-    background-color: green;
+    background-color: #008000;
 }
 
 /* ============================================
@@ -810,10 +810,10 @@ dialog::backdrop {
     transform: scale(0.98);
 }
 
-.membership-card {
+/* .membership-card {
     transition: transform .2s ease;
 }
 
 .membership-card:hover {
     transform: translateY(-3px);
-}
+} */
