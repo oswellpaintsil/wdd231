@@ -628,7 +628,7 @@ footer {
 }
 
 /* ============================================
-   MEMBERSHIP CARDS
+   MEMBERSHIP CARDS (CLEAN VERSION)
 ============================================ */
 
 .membership-cards {
@@ -646,6 +646,7 @@ footer {
     transform: translateY(25px);
 
     animation: cardFadeIn .8s ease forwards;
+    transition: transform .2s ease;
 }
 
 .membership-card:nth-child(2) {
@@ -660,6 +661,10 @@ footer {
     animation-delay: .6s;
 }
 
+.membership-card:hover {
+    transform: translateY(-3px);
+}
+
 .membership-card h2 {
     color: #1a3c2a;
     margin-bottom: .75rem;
@@ -670,15 +675,16 @@ footer {
 }
 
 .membership-card a {
-    color: #c8963e;
-    font-weight: bold;
+    display: inline-block;
+    margin-top: .5rem;
+     color: #8b6508;
+    font-weight: 600;
     text-decoration: none;
 }
 
 .membership-card a:hover {
     text-decoration: underline;
 }
-
 /* ============================================
    CARD ANIMATION
 ============================================ */
@@ -790,11 +796,11 @@ dialog::backdrop {
     outline-offset: 2px;
 }
 
-.membership-card a {
+/* .membership-card a {
     display: inline-block;
     margin-top: .5rem;
     font-weight: 600;
-}
+} */
 
 /* ============================================
    INTERACTION POLISH
