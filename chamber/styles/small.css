@@ -817,3 +817,99 @@ dialog::backdrop {
 .membership-card:hover {
     transform: translateY(-3px);
 } */
+
+
+/* ==========================================
+   DISCOVER PAGE
+========================================== */
+
+.discover-main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.discover-main h1 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+/* Visitor Message */
+
+#visit-message {
+    background-color: #f4f4f4;
+    border-left: 5px solid #1a3c2a;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    border-radius: 5px;
+    font-weight: 600;
+}
+
+/* Grid Container */
+
+#discover-grid {
+    display: grid;
+    gap: 1rem;
+
+    grid-template-areas:
+        "card1"
+        "card2"
+        "card3"
+        "card4"
+        "card5"
+        "card6"
+        "card7"
+        "card8";
+}
+
+/* Named Areas */
+
+.card1 { grid-area: card1; }
+.card2 { grid-area: card2; }
+.card3 { grid-area: card3; }
+.card4 { grid-area: card4; }
+.card5 { grid-area: card5; }
+.card6 { grid-area: card6; }
+.card7 { grid-area: card7; }
+.card8 { grid-area: card8; }
+
+/* Card Design */
+
+.discover-card {
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    padding: 1rem;
+    box-shadow: 0 2px 6px rgba(0,0,0,.1);
+}
+
+.discover-card h2 {
+    margin-top: 0;
+    color: #1a3c2a;
+}
+
+.discover-card figure {
+    margin: 0;
+}
+
+.discover-card img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.discover-card address {
+    margin: 1rem 0;
+    font-style: normal;
+    font-weight: 600;
+}
+
+.discover-card button {
+    background: #1a3c2a;
+    color: white;
+    border: none;
+    padding: .7rem 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
