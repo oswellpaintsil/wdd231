@@ -1,0 +1,107 @@
+[
+  {
+    "id": 1,
+    "title": "Insufficient Ceiling Space",
+    "category": "Architectural Coordination",
+    "problem": "Not enough space allocated for ductwork.",
+    "solution": "Coordinate ceiling heights early."
+  },
+  {
+    "id": 2,
+    "title": "Ductwork Clashes",
+    "category": "Coordination",
+    "problem": "Ducts conflict with beams and pipes.",
+    "solution": "Use BIM coordination."
+  },
+  {
+    "id": 3,
+    "title": "Poor Equipment Access",
+    "category": "Maintenance",
+    "problem": "Equipment cannot be serviced easily.",
+    "solution": "Provide maintenance clearances."
+  },
+  {
+    "id": 4,
+    "title": "Incorrect Mechanical Room Size",
+    "category": "Space Planning",
+    "problem": "Mechanical rooms are undersized.",
+    "solution": "Allocate adequate equipment space."
+  },
+  {
+    "id": 5,
+    "title": "Oversized HVAC Equipment",
+    "category": "Design",
+    "problem": "Systems cycle excessively.",
+    "solution": "Perform accurate load calculations."
+  },
+  {
+    "id": 6,
+    "title": "Undersized HVAC Equipment",
+    "category": "Design",
+    "problem": "Systems fail to meet loads.",
+    "solution": "Verify peak load requirements."
+  },
+  {
+    "id": 7,
+    "title": "Poor Ventilation Planning",
+    "category": "Indoor Air Quality",
+    "problem": "Fresh air requirements not met.",
+    "solution": "Follow ventilation standards."
+  },
+  {
+    "id": 8,
+    "title": "Inadequate Fresh Air Intake",
+    "category": "Ventilation",
+    "problem": "Poor occupant comfort.",
+    "solution": "Provide adequate outdoor air."
+  },
+  {
+    "id": 9,
+    "title": "Improper Thermostat Placement",
+    "category": "Controls",
+    "problem": "Inaccurate temperature readings.",
+    "solution": "Install away from heat sources."
+  },
+  {
+    "id": 10,
+    "title": "Lack of Maintenance Access",
+    "category": "Maintenance",
+    "problem": "Future servicing becomes difficult.",
+    "solution": "Provide access panels."
+  },
+  {
+    "id": 11,
+    "title": "Poor Return Air Design",
+    "category": "Air Distribution",
+    "problem": "Uneven airflow.",
+    "solution": "Balance supply and return systems."
+  },
+  {
+    "id": 12,
+    "title": "Ignoring Solar Heat Gain",
+    "category": "Building Envelope",
+    "problem": "Cooling loads increase.",
+    "solution": "Consider building orientation."
+  },
+  {
+    "id": 13,
+    "title": "No Future Expansion Allowance",
+    "category": "Planning",
+    "problem": "Future upgrades become difficult.",
+    "solution": "Plan for expansion."
+  },
+  {
+    "id": 14,
+    "title": "Noise and Vibration Problems",
+    "category": "Acoustics",
+    "problem": "Occupant discomfort.",
+    "solution": "Provide acoustic treatment."
+  },
+  {
+    "id": 15,
+    "title": "Poor Building Orientation",
+    "category": "Energy Efficiency",
+    "problem": "Increased cooling demand.",
+    "solution": "Consider climate during design."
+  }
+]

@@ -1,0 +1,27 @@
+@media (min-width: 768px) {
+
+    #menu-button {
+        display: none;
+    }
+
+    #main-nav {
+        display: block;
+    }
+
+    .navigation {
+        display: flex;
+        justify-content: center;
+    }
+
+    .stats-container,
+    #mistakes-container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        align-items: center;
+    }
+}

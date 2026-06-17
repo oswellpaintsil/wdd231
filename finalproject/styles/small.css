@@ -1,0 +1,111 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header,
+footer {
+    background: #003049;
+    color: white;
+    padding: 1rem;
+}
+
+header h1 {
+    text-align: center;
+}
+
+.navigation {
+    list-style: none;
+}
+
+.navigation a {
+    display: block;
+    padding: .75rem;
+    color: white;
+    text-decoration: none;
+}
+
+.navigation a.active {
+    background: #669bbc;
+}
+
+#main-nav {
+    display: none;
+}
+
+#main-nav.open {
+    display: block;
+}
+
+#menu-button,
+#theme-button {
+    padding: .5rem;
+    margin: .25rem;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.stats-container,
+#mistakes-container {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.stat-card,
+.mistake-card {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+form {
+    display: grid;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+input,
+textarea {
+    width: 100%;
+    padding: .5rem;
+}
+
+.dark {
+    background: #222;
+    color: white;
+}
+
+dialog {
+    padding: 1rem;
+    max-width: 600px;
+}
+
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+.navigation a:hover {
+    background: #1d3557;
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.75rem 1rem;
+    background: #003049;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+}
