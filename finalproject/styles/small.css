@@ -109,3 +109,14 @@ img {
     text-decoration: none;
     border-radius: 5px;
 }
+
+body {
+    font-family: 'Roboto', Arial, sans-serif; /* Applied new Google font */
+}
+
+header h1, 
+.site-title {
+    text-align: center;
+    font-size: 2rem;
+    font-weight: bold;
+}
